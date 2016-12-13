@@ -28,7 +28,7 @@ QUICの優れている点
 
 TCPの方が、QUICに対して優れている点は？
 
-QUICが解決できないTCPの問題点はなんだろうか？
+QUICでも解決できないTCPの問題点はなんだろうか？
 
 ### 2. TCPM/MPTCP/関連
 - QUICに導入されるトランスポート機能で長期間ドラフトままだったり、Expireしてしまったりしているものがあるのはなぜか？ ( TCP Cubic: 2008年論文発表、Linux 2.6.13 より実装,TLP:ID-00 2012/07, expire 2013/08)
@@ -56,3 +56,15 @@ QUICのトランスポート層に導入予定機能は既にLinux kernelに(多
 QUICは、独自にトランスポート機能を開発するわけではなく、tcpm wgの成果をQUIC仕様に取り込むのが大前提。ただしQUICは向けにアレンジしないといけない部分が出てくるだろう。
 
 どんな部分を変えないといけないのであろうか？
+
+### 4. その他
+
+#### Happy Eyeball
+RFC 6555(Happy Eyeballs)では、IPv4/IPv6 dual-stack 環境下でのフォールバックが
+TCPベースで語られていて、UDPに関しては実現可能性にしか触れられていません。
+
+UDPベースである QUICにはHappy Eyeballs 相当の機能が実装されることが議論されて
+いるのでしょうか。それともUDPでの fallbackはアプリ依存の話になり、QUICの仕様
+では語られない部分となるのでしょうか。
+
+Ref: https://github.com/shigeki/ask_nishida_about_quic_jp/issues/1
