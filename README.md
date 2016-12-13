@@ -57,9 +57,9 @@ QUICは、独自にトランスポート機能を開発するわけではなく�
 
 どんな部分を変えないといけないのであろうか？
 
-### 4. その他
+### 4. 外部の方からの質問事項
 
-#### Happy Eyeball
+#### 4.1 Happy Eyeball
 RFC 6555(Happy Eyeballs)では、IPv4/IPv6 dual-stack 環境下でのフォールバックが
 TCPベースで語られていて、UDPに関しては実現可能性にしか触れられていません。
 
@@ -68,3 +68,13 @@ UDPベースである QUICにはHappy Eyeballs 相当の機能が実装される
 では語られない部分となるのでしょうか。
 
 Ref: https://github.com/shigeki/ask_nishida_about_quic_jp/issues/1
+
+### 4.2 MTU
+QUICってTCPオプションのMSSのような仕組みはありますでしょうか。
+IPv4ではフラグメントされてサーバに届くことも多いのでは無いかと危惧しています。
+フラグメントされたパケットはフィルタされることもあるかと思います。
+
+DNSにおけるEDNS0の運用上の推奨サイズのようなもので回避する等はあるかと思いますが、
+仕様においてQUICのパケットがフラグメントされないようなことを目的としたものはございますでしょうか？
+
+Ref: https://github.com/shigeki/ask_nishida_about_quic_jp/issues/2
