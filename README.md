@@ -78,3 +78,15 @@ DNSにおけるEDNS0の運用上の推奨サイズのようなもので回避す
 仕様においてQUICのパケットがフラグメントされないようなことを目的としたものはございますでしょうか？
 
 Ref: https://github.com/shigeki/ask_nishida_about_quic_jp/issues/2
+
+### 4.3 Distinction between QUIC and DDoS
+現在，UDP によるDDoS が目立っています．
+常時UDP を落とす事業者は少ないですが，有事の際にルーターのようなミドルボックスで
+
+基本UDP はぜんぶ落とす
+ただし特定のキャッシュサーバー，権威サーバー宛てのみ53/UDP を許可する
+は有効な手段であり，検討している事業者は少なくないと思います．
+
+実装可能性は別として，理論上QUIC とDDoS を仕分けできそうな，トランスポートの特徴などありそうでしょうか？ それとも積極的にTCPフォールバックさせたほうがよさそうでしょうか？
+
+Ref: https://github.com/shigeki/ask_nishida_about_quic_jp/issues/3
