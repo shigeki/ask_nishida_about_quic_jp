@@ -69,7 +69,7 @@ UDPベースである QUICにはHappy Eyeballs 相当の機能が実装される
 
 Ref: https://github.com/shigeki/ask_nishida_about_quic_jp/issues/1
 
-### 4.2 MTU
+#### 4.2 MTU
 QUICってTCPオプションのMSSのような仕組みはありますでしょうか。
 IPv4ではフラグメントされてサーバに届くことも多いのでは無いかと危惧しています。
 フラグメントされたパケットはフィルタされることもあるかと思います。
@@ -79,7 +79,7 @@ DNSにおけるEDNS0の運用上の推奨サイズのようなもので回避す
 
 Ref: https://github.com/shigeki/ask_nishida_about_quic_jp/issues/2
 
-### 4.3 Distinction between QUIC and DDoS
+#### 4.3 Distinction between QUIC and DDoS
 現在，UDP によるDDoS が目立っています．
 常時UDP を落とす事業者は少ないですが，有事の際にルーターのようなミドルボックスで
 
