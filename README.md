@@ -8,6 +8,10 @@
 
 参加希望者は JPNIC 木村さんまで。
 
+## IETF QUIC WG 全般について(Goal, Focus Area)
+
+https://speakerdeck.com/shigeki/quic-wgbao-gao
+
 ## 参考ドラフト
 
 QUIC Loss Detection and Congestion Control https://datatracker.ietf.org/doc/draft-ietf-quic-recovery/
