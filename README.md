@@ -94,3 +94,7 @@ Ref: https://github.com/shigeki/ask_nishida_about_quic_jp/issues/2
 実装可能性は別として，理論上QUIC とDDoS を仕分けできそうな，トランスポートの特徴などありそうでしょうか？ それとも積極的にTCPフォールバックさせたほうがよさそうでしょうか？
 
 Ref: https://github.com/shigeki/ask_nishida_about_quic_jp/issues/3
+
+# 議事録メモ
+
+https://github.com/shigeki/ask_nishida_about_quic_jp/blob/master/MINUTES.md
