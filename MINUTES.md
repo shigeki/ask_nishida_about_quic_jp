@@ -105,8 +105,7 @@ https://speakerdeck.com/shigeki/quic-wgbao-gao
 > どんな部分を変えないといけないのであろうか？
 
 - TCPとはLoss recoveryが違う。New Renoはackベースのloss recoveryだが。
-- タイムアウトしないのでROTしない、3782->6675もdup ackのloss
-- recoveryも実装できない。
+- タイムアウトしないのでROTしない、3782->6675もdup ackのloss recoveryも実装できない。
 - Hybrid Slow Startは論文しかない。
 - これらはこのまま入れることはないだろうと思う。
 - RACKがコアとなって、、どうlossを見つけるかだけでしかない。
